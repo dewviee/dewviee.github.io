@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
     reactStrictMode: true,
-    assetPrefix: isProd ? 'dewviee.github.io' : '',
+    assetPrefix: isProd ? 'https://github.com/dewviee/dewviee.github.io' : '',
 }
 
 module.exports = nextConfig
