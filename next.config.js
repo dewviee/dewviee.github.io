@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-    distDir: 'docs',
+    reactStrictMode: true,
+    assetPrefix: isProd ? 'dewviee.github.io' : '',
 }
 
 module.exports = nextConfig
