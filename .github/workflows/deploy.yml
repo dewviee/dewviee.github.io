@@ -16,6 +16,7 @@ jobs:
         node-version: [16.17.1]
 
     steps:
+      - uses: actions/checkout@v2
         # fix cache issues https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
       - uses: actions/cache@v3
         with:
