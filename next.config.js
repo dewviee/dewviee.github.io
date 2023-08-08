@@ -6,6 +6,7 @@ const nextConfig = {
     basePath: '/dewviee.github.io',
     assetPrefix: isProd ? '/' : '',
     output: 'export',
+    
 }
 
 module.exports = nextConfig
