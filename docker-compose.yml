@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build: ./
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./dewvie-github-fe:/app # For hot reloading
+
+
+  # nestjs:
+  #   build: ./nestjs-api
+  #   ports:
+  #     - "3001:3001" # Adjust NestJS port if needed
+  #   volumes:
+  #     - ./nestjs-api:/app  # For hot reloading
+  #   depends_on:  # If NestJS depends on other services (e.g., database)
+  #     - db
